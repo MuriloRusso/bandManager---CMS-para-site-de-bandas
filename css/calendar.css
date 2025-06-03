@@ -1,0 +1,8 @@
+.event{
+    border-bottom: 1px solid #333;
+}
+.event .icon-calendar{
+    margin: auto;
+    width: 30px;
+    height: auto;
+}

@@ -1,0 +1,111 @@
+/* Customizing the scrollbar for WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #676767 ; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounding the track corners */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #131313; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounding the thumb corners */
+    border: 2px solid #676767; /* Adding a border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #676767; /* Color of the thumb on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #131313 #676767; /* thumb and track color */
+}
+
+/* Customizing scrollbar for Internet Explorer and Edge */
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #232323 !important;
+    min-height: 110vh;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.font-title{
+    font-family: "Oleo Script", system-ui;
+    color: white;
+}
+.color-white{
+    color: white;
+}
+#banner{
+    background-image: url('../public/src/img/banner/banner.jpg');
+    background-size: cover;
+    padding: 211px 0;
+    background-position: center;
+}
+#cards .container{
+    background: #131313;
+}
+.heading{
+    font-size: 12px;
+}
+.short-text{
+    font-size: 12px;
+}
+.border-right{
+    border-right: 1px solid #343434;
+}
+.color-gray{
+    color: #9a9a9a;
+}
+.notification{
+    background-color: orange;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    display: block;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.background{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+@media (max-width: 776px){
+    .border-right{
+        border-right: 0;
+        border-bottom: 1px solid #343434;
+    }
+    .short-text{
+        font-size: 15px;
+    }
+    .notification{
+        width: 35px;
+        height: 35px;
+    }
+}

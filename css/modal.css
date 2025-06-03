@@ -1,0 +1,21 @@
+.modal{
+    position: fixed !important;
+    left: 0px !important;
+    top: 0px !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    z-index: 99999 !important;
+    height: 100vh !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.modal.opened{
+    display: flex !important;
+}
+.modal .container{
+    background-color: #232323 !important;
+    max-height: 95vh;
+}
+.modal form{
+    overflow: auto !important;
+    max-height: 80vh !important;
+}

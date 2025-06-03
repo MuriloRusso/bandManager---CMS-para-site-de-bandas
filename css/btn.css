@@ -1,0 +1,73 @@
+.btn-primary{
+    padding: 5px 20px;
+    background-color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+    border: none !important;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn-secondary{
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+.btn-secondary:hover{
+    color: #606060;
+}
+
+
+.btn-access{
+    background-color: #E9DBFF !important;
+    color: #8A62CC !important;
+}
+.btn-access:hover{
+    background-color: #d8caee !important;
+}
+
+.btn-edit{
+    background-color: #DFEFFF !important;
+    color: #0071E3 !important;
+}
+.btn-edit:hover{
+    background-color: #cedeee !important;
+}
+.btn-success:hover{
+    background-color: #B9ECE6 !important;
+    color: #188477 !important;
+}
+.btn-delete{
+    background-color: #FFE8EE !important;
+    color: #EE6C90 !important;
+}
+.btn-delete:hover{
+    background-color: #eed7dd !important;
+}
+
+.btn-primary-reverse{
+    cursor: pointer;
+    background-color: white !important;
+    color: black !important;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s ease;
+    border: none !important;
+}
+.btn-primary-reverse:hover{
+    background-color: black !important;
+    color: white !important;
+}
+
+@media (max-width: 776px){
+    .btn-primary, .btn-primary-reverse {
+        padding: 15px 50px;
+        display: block;
+        width: fit-content;
+    }
+}

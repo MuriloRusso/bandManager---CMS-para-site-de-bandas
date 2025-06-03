@@ -1,0 +1,19 @@
+.alert{
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.alert-success{
+    background-color: green;
+    color: white;
+}
+.alert-danger{
+    background-color: red;
+    color: white;
+}
+
+.btn-close{
+    position: absolute !important;
+    right: 10px !important;
+}

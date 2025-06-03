@@ -1,0 +1,118 @@
+header{
+    background: #131313;
+    padding: 9px 0 39px;
+    border-bottom: 5px solid #000000;
+    font-family: "Oleo Script", system-ui;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    max-height: 95vh;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 61px;
+}
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li{
+    /* padding: 0 15px; */
+    border-right: 1px solid #606060;
+}
+header nav ul li a{
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 19px;
+    transition: 0.5s ease;
+    display: block;
+}
+header nav ul li a:hover{
+    color: #606060;
+}
+
+/*sub-menu*/
+header nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: #343434;
+    padding: 10px;
+    margin-left: -68px;
+    flex-direction: column;
+}
+header nav ul li:hover > ul{
+    display: block;
+}
+
+header nav ul li ul li{
+    border: none;
+}
+
+/* ---------------------- */
+
+
+#btn-menu-mobile{
+    display: none !important;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    width: 42px;
+    height: 41px;
+}
+#btn-menu-mobile hr{
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    border-color: white;
+    opacity: 1;
+}
+#btn-menu-mobile.active hr{
+    display: none;
+}
+#btn-menu-mobile span{
+    color: white;
+    display: none;
+    font-size: 20px;
+    /* font-family: initial; */
+}
+#btn-menu-mobile.active span{
+    display: block;
+}
+
+@media (max-width: 776px){    
+    header{
+        overflow: auto;
+    }    
+    #menu{
+        display: none !important;
+        width: 100%;
+    }
+    #menu.active{
+        display: flex !important;
+    }
+    #btn-menu-mobile{
+        display: block !important;
+    }
+    header nav ul li{
+        border-right: 0;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+    }
+    header nav ul li a{
+        width: 100%;
+        font-size: 25px;
+    }
+    /*sub-menu*/
+    header nav ul li ul{
+        position: relative;
+        margin: 0 !important;
+    }
+}

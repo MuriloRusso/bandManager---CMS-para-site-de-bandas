@@ -1,0 +1,54 @@
+
+header #midias{
+    display: flex;
+}
+#midias a{
+    margin: 0 5px;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+#midias #facebook{
+    background-color: #3b5998; /*Facebook blue color */
+}
+#midias #facebook:hover{
+    background-color: #6082c9; /*Facebook blue color */
+}
+#midias #instagram{
+    background-color: #dd2a7b; /*instagram blue color */
+}
+#midias #instagram:hover{
+    background-color: #e1306c; /*instagram blue color */
+}
+#midias #twitter{
+    background-color: #00acee;
+}
+#midias #twitter:hover{
+    background-color: #18a1d6;
+}
+#midias #youtube{
+    background-color: firebrick; /*youtube blue color */
+}
+#midias #youtube:hover{
+    background-color: firebrick; /*youtube blue color */
+}
+#midias i {
+    font-size: 14px;
+    color: white;
+}
+
+
+@media (max-width: 776px){
+    #midias a{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    #midias i {
+        font-size: 21px;
+    }
+}

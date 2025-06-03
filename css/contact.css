@@ -1,0 +1,69 @@
+input, textarea, select{
+    width: 100%;
+    background-color: #131313;
+    border: 1px solid #131313;
+    padding: 8px 20px;
+    color: white;
+}
+textarea{
+    height: 186px;
+}
+input::placeholder, textarea::placeholder{
+    color: white;
+}
+input:focus-visible, textarea:focus-visible, select:focus-visible{
+    outline: none;
+}
+.error{
+    border: 1px solid red;
+}
+.form-group.col-md-3.col-12.my-3 {
+    width: 32%;
+}
+
+/*upload*/
+
+#upload, #uploadEdit, input[type="file"]{	
+	display: none;	
+}
+.upload{
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #aaa;
+	border: 2px dashed;
+	cursor: pointer;
+	transition: color 300ms ease-in-out,  background 300ms ease-in-out;
+	max-width: 100% !important;
+    min-height: 200px;
+    height: auto;
+}
+
+.upload.edit{
+    min-height: 50px !important;
+}
+
+
+.upload:hover{	
+	color: #999;
+	background-color: #ccc;
+}
+
+.upload:active{
+	border-color: turquoise;
+	color: turquoise;
+	background-color: #eee;	
+}
+.upload img{	
+	max-width: 100%;
+}
+
+/* ------------------ */
+
+
+@media (max-width: 776px){
+    .form-group.col-md-3.col-12.my-3 {
+        width: 100%;
+    }
+}
